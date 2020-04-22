@@ -135,7 +135,7 @@ def main():
             abort(404)
         return redirect('/')
 
-    app.run('127.0.0.1', 8000, True)
+    app.run(port=80, host='127.0.0.1', debug=True)
 
 
 if __name__ == '__main__':
